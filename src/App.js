@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar'
 import NavbarBrand from 'react-bootstrap/esm/NavbarBrand';
 import Nav from 'react-bootstrap/Nav';
-// import Footer from './components/Footer';
+import Footer from './component/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
@@ -43,8 +43,8 @@ class App extends React.Component {
       <Router>
         <Container className="p-0" fluid={true}>
 
-          <Navbar className="border-bottom" background="transparent" expand="lg">
-            <NavbarBrand>Raemarie Oatman</NavbarBrand>
+          <Navbar className="border-bottom bg-transparent" expand="lg">
+            <NavbarBrand></NavbarBrand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
             <Navbar.Collapse id="navbar-toggle"/>
@@ -58,26 +58,24 @@ class App extends React.Component {
           <Route path="/" exact render={() =>
             <HomePage title={this.state.home.title} 
             subTitle={this.state.home.subTitle}
-            text={this.state.home.text}
+            comment={this.state.home.comment}
             />}
             />
 
           <Route path="/aboutme" render={() => 
             <AboutPage title={this.state.home.title}
-            subTitle={this.state.aboutme.subTitle}
-            text={this.state.aboutme.text}
+            text={this.state.about.text}
           />}
           />
 
           <Route path="/contactme" render={() =>
             <ContactPage title={this.state.home.title}
-            subTitle={this.state.contact.subTitle}
-            text={this.state.contact.text}
             />}
             />
 
 
 
+            <Footer />
         </Container>
       </Router>
     )
