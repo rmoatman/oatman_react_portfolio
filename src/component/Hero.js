@@ -10,10 +10,10 @@ function Hero(props) {
     return(
         <Jumbotron className="bg-transparent jumbotron-fluid p-0">
             <Container fluid={true}>
-                <Row className="justify-content-center py-5">
-                    <Col lg={6}>
-                        { props.title && <h1 className="display-1 font-weight-bolder">{props.title}</h1> }
-                        { props.subTitle && <h3>{props.subTitle}</h3> }
+                <Row className="py-5">
+                    <Col>
+                        { props.title && <h1 className="display-1 fw-bolder d-flex justify-content-center">{props.title}</h1> }
+                        { props.subTitle && <h3 className="d-flex justify-content-center fw-bold fst-italic">{props.subTitle}</h3> }
                         { props.comment && <h3>{props.comment}</h3> }
                     </Col>
                 </Row>

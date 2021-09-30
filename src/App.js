@@ -8,9 +8,12 @@ import Footer from './component/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
-
 import './App.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
+library.add( fab, faEnvelope, faGithub, faLinkedin )
 
 class App extends React.Component {
 
@@ -25,9 +28,9 @@ class App extends React.Component {
         {resume: "Resume", path: '/resume'}
       ],
       home:  {
-        title: "Insert Title Here",
-        subTitle: "Projects",
-        comment: "Checkout my projects below"
+        title: "Full-Stack Web Developer",
+        subTitle: "Clean and thoughtful design",
+        comment: " "
       },
       about:  {
         title: "About Me",
@@ -38,20 +41,22 @@ class App extends React.Component {
       }
     }
   }
+
   render() {
     return (
       <Router>
         <Container className="p-0" fluid={true}>
 
-          <Navbar className="border-bottom bg-transparent" expand="lg">
-            <NavbarBrand></NavbarBrand>
+          <Navbar className=" fw-bold p-5 border-bottom" bg="primary" variant="dark" expand="lg">
+            <NavbarBrand className="fs-1">Raemarie Oatman</NavbarBrand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
             <Navbar.Collapse id="navbar-toggle"/>
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/">Home</Link>
-                <Link className="nav-link" to="/aboutme">About Me</Link>
-                <Link className="nav-link" to="/contactme">Contact Me</Link>
+                <Link className="nav-link fs-3 p-4" to="/">Home</Link>
+                <Link className="nav-link fs-3 p-4" to="/aboutme">About Me</Link>
+                <Link className="nav-link fs-3 p-4" to="/contactme">Contact Me</Link>
+                <Link className="nav-link fs-3 p-4" to="/contactme">Resume</Link>
               </Nav>
           </Navbar>
 
@@ -73,8 +78,6 @@ class App extends React.Component {
             />}
             />
 
-
-
             <Footer />
         </Container>
       </Router>
@@ -82,5 +85,4 @@ class App extends React.Component {
   }
 }
    
-
 export default App;
