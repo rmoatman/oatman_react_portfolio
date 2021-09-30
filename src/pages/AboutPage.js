@@ -9,7 +9,7 @@ function AboutPage(props) {
     
     return(
         <div>
-            <Hero title={props.title}/>
+            <Hero title={"About Me"}/>
 
             <Content>
 
@@ -21,7 +21,7 @@ function AboutPage(props) {
                             
                             <p className="d-flex justify-content-center">Detailed * Curious * Organized * Creative * Passionate</p><br></br>
                             
-                            <p className="d-flex justify-content-center">JavaScript * HTML * CSS * JQuery * API * React.js * MySQL * Node.js</p>
+                            <p className="d-flex justify-content-center">JavaScript * HTML * CSS * API * React.js * MySQL * Node.js</p>
                         </div>
                     </Col>
 
