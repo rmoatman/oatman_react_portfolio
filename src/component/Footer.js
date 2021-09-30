@@ -10,9 +10,6 @@ function Footer(props) {
         <footer className="mt-5">
             <Container fluid={true}>
                 <Row className="border-top p-3 d-flex justify-content-center">
-                    <Col className="p-0 d-flex justify-content-center" xs lg="2">
-                    <a href="mailto:raemarie.oatman@gmail.com"><FontAwesomeIcon icon="envelope" size="6x"/></a>
-                    </Col>
                     
                     <Col className="p-0 d-flex justify-content-center" xs lg="2">
                     <a href="https://github.com/rmoatman" target = "_blank"><FontAwesomeIcon icon={["fab", "github"]} size="6x"/></a>
@@ -20,6 +17,10 @@ function Footer(props) {
 
                     <Col className="p-0 d-flex justify-content-center" xs lg="2">
                     <a href="https://www.linkedin.com/in/raemarieoatman/" target = "_blank"><FontAwesomeIcon icon={["fab", "linkedin"]} size="6x"/></a>
+                    </Col>
+
+                    <Col className="p-0 d-flex justify-content-center" xs lg="2">
+                    <a href="https://twitter.com/rmoatman" target = "_blank"><FontAwesomeIcon icon={["fab", "twitter"]} size="6x"/></a>
                     </Col>
 
                 </Row>

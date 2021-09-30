@@ -26,7 +26,7 @@ function AboutPage(props) {
                     </Col>
 
                     <Col md={3}>
-                        <img src={oatman} height="400px" alt="Professional headshot of Raemarie Oatman"></img>
+                        <img src={oatman} height="400px" alt="Professional headshot of Raemarie Oatman" className="g-card-image"></img>
                     </Col>
 
                 </Row>

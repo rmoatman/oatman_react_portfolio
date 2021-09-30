@@ -10,10 +10,10 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { fab, faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-library.add( fab, faEnvelope, faGithub, faLinkedin )
+library.add( fab, faEnvelope, faGithub, faLinkedin, faTwitter )
 
 class App extends React.Component {
 

@@ -2,7 +2,10 @@ import React from 'react';
 import bilingual from '../assets/images/bilingual.jpg';
 import ingredients from '../assets/images/ingredients.jpg';
 import weather from '../assets/images/weather.jpg';
-import Card from '../component/Card'
+import medication from '../assets/images/medication.jpg';
+import planner from '../assets/images/planner.jpg';
+import data from '../assets/images/data.jpg';
+import Card from '../component/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
@@ -36,6 +39,30 @@ class Carousel extends React.Component{
                     subTitle: 'Track your local weather',
                     imgSrc: weather,
                     link: 'https://rmoatman.github.io/Roatman_Weather_Dashboard/',
+                    selected: false
+                },
+                {
+                    id: 3,
+                    title: 'Day Planner',
+                    subTitle: 'Keep track of the workday',
+                    imgSrc: planner,
+                    link: 'https://rmoatman.github.io/Roatman_Work_Day_Scheduler/',
+                    selected: false
+                },
+                {
+                    id: 4,
+                    title: 'ORM Example',
+                    subTitle: 'Sample E-Commerce Back-end',
+                    imgSrc: data,
+                    link: 'https://github.com/rmoatman/E_Commerce_Back_End',
+                    selected: false
+                },
+                {
+                    id: 5,
+                    title: 'Medication Tracker',
+                    subTitle: 'Keep track of daily medication schedules',
+                    imgSrc: medication,
+                    link: '',
                     selected: false
                 },
             ]
