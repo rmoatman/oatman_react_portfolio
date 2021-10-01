@@ -27,10 +27,9 @@ class App extends React.Component {
     this.state = {
       title: "Raemarie Oatman",
       headerLinks: [
-        { home: "Home", path: "/" },
+        { home: "Home", path: "/oatman_react_portfolio" },
         { about: "About Me", path: "/aboutme" },
         { contact: "Contact Me", path: "/contact" },
-        { resume: "Resume", path: "/resume" },
       ],
       home: {
         title: "Full-Stack Web Developer",
@@ -80,7 +79,7 @@ class App extends React.Component {
           </Navbar>
 
           <Route
-            path="/"
+            path="/oatman_react_portfolio"
             exact
             render={() => (
               <HomePage
