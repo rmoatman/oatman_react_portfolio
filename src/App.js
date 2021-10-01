@@ -110,7 +110,7 @@ class App extends React.Component {
           />
 
           <Route
-            path="/oatman_react_portfolio/underconstruction"
+            path="/rmoatman.github.io/UnderConstruction"
             exact
             render={() => <UnderConstruction title={this.state.home.title} />}
           />
