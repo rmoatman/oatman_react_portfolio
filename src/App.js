@@ -76,9 +76,6 @@ class App extends React.Component {
                 <a href={Resume} target="__blank" className="text-decoration-none" >Resume</a>
               </Navbar.Text>
 
-              {/* <Link className="nav-link fs-3 p-4" to="/resume">
-                Resume
-              </Link> */}
             </Nav>
           </Navbar>
 
@@ -96,6 +93,7 @@ class App extends React.Component {
 
           <Route
             path="/aboutme"
+            exact
             render={() => (
               <AboutPage
                 title={this.state.home.title}
@@ -106,15 +104,10 @@ class App extends React.Component {
 
           <Route
             path="/contact"
+            exact
             render={() => <ContactPage title={this.state.home.title} />}
           />
-{/* 
-          <Route
-            path="/contact"
-            render={() => <ResumePage title={this.state.home.title} />}
-           // render={() => window.open(Resume)}
-          /> */}
-
+          
           <Footer />
         </Container>
       </Router>
