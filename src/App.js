@@ -61,7 +61,7 @@ class App extends React.Component {
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle" />
             <Nav className="ml-auto">
-              <Link className="nav-link fs-3 p-4" to="/">
+              <Link className="nav-link fs-3 p-4" to="/oatman_react_portfolio">
                 Home
               </Link>
               <Link className="nav-link fs-3 p-4" to="/aboutme">
@@ -80,7 +80,7 @@ class App extends React.Component {
 
           <Route
             path="/oatman_react_portfolio"
-            exact
+            
             render={() => (
               <HomePage
                 title={this.state.home.title}
