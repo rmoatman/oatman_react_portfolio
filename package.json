@@ -1,7 +1,7 @@
 {
   "name": "oatman_react_portfolio",
   "version": "0.1.0",
-  "homepage": "https://github.com/rmoatman/oatman_react_portfolio"
+  "homepage": "https://github.com/rmoatman/oatman_react_portfolio",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
