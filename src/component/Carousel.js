@@ -62,7 +62,7 @@ class Carousel extends React.Component{
                     title: 'Medication Tracker',
                     subTitle: 'Keep track of daily medication schedules',
                     imgSrc: medication,
-                    link: '',
+                    link: '/UnderConstruction',
                     selected: false
                 },
             ]

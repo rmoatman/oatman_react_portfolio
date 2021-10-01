@@ -8,6 +8,7 @@ import Footer from "./component/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import UnderConstruction from "./pages/UnderConstruction";
 import "./App.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -34,7 +35,7 @@ class App extends React.Component {
       home: {
         title: "Full-Stack Web Developer",
         subTitle: "Clean and thoughtful design",
-        comment: " ",
+        comment: "Click on a photo below to learn more",
       },
       about: {
         title: "About Me",
@@ -51,16 +52,17 @@ class App extends React.Component {
       <Router>
         <Container className="p-0" fluid={true}>
           <Navbar
-            className=" fw-bold p-5 border-bottom"
+            className=" fw-bold p-3 border-bottom"
             bg="primary"
             variant="dark"
             expand="lg"
+            fixed="top"
           >
             <NavbarBrand className="fs-1">Raemarie Oatman</NavbarBrand>
 
-            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
-            <Navbar.Collapse id="navbar-toggle" />
-            <Nav className="ml-auto">
+            <Navbar.Toggle className="border-0" aria-controls="basic-navbar-nav"/>
+            <Navbar.Collapse id="basic-navbar-nav" />
+            <Nav className="me-auto">
               <Link className="nav-link fs-3 p-4" to="/oatman_react_portfolio">
                 Home
               </Link>
@@ -105,6 +107,12 @@ class App extends React.Component {
             path="/contact"
             exact
             render={() => <ContactPage title={this.state.home.title} />}
+          />
+
+          <Route
+            path="/underconstruction"
+            exact
+            render={() => <UnderConstruction title={this.state.home.title} />}
           />
           
           <Footer />
